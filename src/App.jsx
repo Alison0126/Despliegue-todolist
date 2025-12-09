@@ -108,7 +108,7 @@ function App() {
               <path d="M7 12.5L10 15.5L17 8.5" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
             <div>
-              <div className="brand">Todo — Luyer</div>
+              <div className="brand">Todo List</div>
               <div className="subtitle">Organiza tu día con simplicidad</div>
             </div>
           </div>
