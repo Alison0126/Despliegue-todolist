@@ -1,0 +1,96 @@
+.app {
+  min-height: 100vh;
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  background: linear-gradient(180deg, #f6fbfb 0%, #f0f6f7 100%);
+  color: #0f1720;
+  padding: 3rem 1rem;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 2rem;
+  box-shadow: 0 8px 30px rgba(16, 24, 40, 0.08);
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logo .brand {
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: #064e3b;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #062c33;
+}
+
+.subtitle {
+  color: #4b5563;
+  font-size: 0.95rem;
+}
+
+.main-section {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.panel {
+  background: linear-gradient(180deg, rgba(255,255,255,0.6), rgba(255,255,255,0.4));
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.right-column {
+  position: sticky;
+  top: 1.5rem;
+}
+
+.error-message {
+  background-color: #fee2e2;
+  color: #7f1d1d;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  border: 1px solid #fecaca;
+}
+
+.loading {
+  text-align: center;
+  color: #6b7280;
+  font-size: 1rem;
+  padding: 1.5rem;
+}
+
+.stats {
+  font-size: 0.95rem;
+  color: #374151;
+}
+
+@media (max-width: 900px) {
+  .main-section {
+    grid-template-columns: 1fr;
+  }
+  .right-column {
+    position: static;
+  }
+}

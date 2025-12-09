@@ -1,0 +1,60 @@
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.9rem;
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #eef5f6;
+  box-shadow: 0 6px 18px rgba(14, 20, 24, 0.04);
+}
+
+.task-item + .task-item { margin-top: 0.75rem; }
+
+.task-item.completed { opacity: 0.6; }
+
+.task-content {
+  display: flex;
+  gap: 0.9rem;
+  flex: 1;
+  align-items: center;
+  min-width: 0;
+}
+
+.task-checkbox {
+  width: 20px; height: 20px;
+  accent-color: #06b6d4;
+  flex-shrink: 0;
+}
+
+.task-text {
+  flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 0.15rem;
+}
+
+.task-title {
+  font-size: 1rem; font-weight: 600; color: #062c33; margin: 0; overflow-wrap: anywhere;
+}
+
+.task-description { font-size: 0.9rem; color: #4b5563; margin: 0; }
+
+.task-date { font-size: 0.78rem; color: #94a3b8; }
+
+.task-actions { display:flex; gap:0.5rem; align-items:center; }
+
+.btn { background: transparent; border: none; cursor: pointer; padding: 0.35rem; border-radius: 8px; }
+
+.btn:hover { background: rgba(6,182,212,0.06); }
+
+.btn-edit { color: #0ea5a1; }
+.btn-delete { color: #ef4444; }
+
+/* Editing state */
+.task-item.editing { flex-direction: column; align-items: stretch; }
+
+.edit-form { display:flex; flex-direction:column; gap:0.6rem; }
+.edit-input, .edit-textarea { padding:0.6rem 0.8rem; border-radius:8px; border:1px solid #e6eef0; }
+
+.edit-actions { display:flex; gap:0.5rem; justify-content:flex-end; }
+.btn-save { background: linear-gradient(90deg,#06b6d4,#0891b2); color:white; padding:0.5rem 0.8rem; border-radius:8px; }
+.btn-cancel { background:#f3f4f6; padding:0.45rem 0.7rem; border-radius:8px; }
